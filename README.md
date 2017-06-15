@@ -8,6 +8,8 @@ Welcome to the Pygame wiki!
 
 - 기본적인 테트리스 코드는 Tetromino를 따라 코딩했습니다.
 
+출처 : https://inventwithpython.com/pygame/chapter7.html
+
 - Tetromino에 Shadow 기능을 넣어, 블럭의 현재 X 위치와 rotation을 동일하게 낙하시켰을 때의 스택 모습을 Shadow로서 보여주는 기능을 구현했습니다.
 
 ## Feature List
