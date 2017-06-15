@@ -308,6 +308,7 @@ def runGame():
         
         DISPLAYSURF.fill(BGCOLOR)
         drawBoard(board)
+        drawExit()
         drawStatus(score, level)
         drawNextPiece(nextPiece)
         if fallingPiece != None:
@@ -550,6 +551,13 @@ def drawNextPiece(piece):
     DISPLAYSURF.blit(nextSurf, nextRect)
     # draw the "next" piece
     drawPiece(piece, pixelx=WINDOWWIDTH-120, pixely=100)
+
+
+def drawExit() :
+    exitSurf = BASICFONT.render('Exit', True, TEXTCOLOR)
+    exitRect = exitSurf.get_rect()
+    exitRect.topleft = (20, 20)
+    DISPLAYSURF.blit(exitSurf, exitRect)
 
 
 if __name__ == '__main__':
